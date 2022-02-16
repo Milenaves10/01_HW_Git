@@ -1,0 +1,144 @@
+ Group 27
+      01 HW Git
+      Milena Veselukhina
+      Ссылка на GitHub: https://github.com/Milenaves10/01_HW_Git.git
+
+ 1. Для выполнения задания у меня:
+   -установлен для Windows - GitBash;
+   -создан аккаунт в GitHub;
+   -создан репозиторий в GitHub.
+ 2. Созданный репозиторий склонирован на локальный компьютер в отдельную папку.
+ 3. Все шаги сценария выполняются в терминале GitBush, Terminal, в папке под гитом.
+
+ 4. Создать файл “new.json” - 
+    touch new.json
+
+ 5. Добавить файл под гит - 
+    git add new.json
+
+ 6. Закоммитить файл - 
+    git commit -m "new.json"
+
+ 7. Отправить файл на внешний GitHub репозиторий - 
+    git push
+
+ 8. Создать файлы new2.json, new2.xml, new2.txt - 
+    touch new2.json new2.xml new2.txt
+
+ 9. Добавить файлы под гит - 
+    git add new2.json new2.xml new2.txt
+
+ 10. Закоммитить файлы - 
+    git commit -m "new2.json new2.txt new2.xml"
+
+ 11. Отправить файлы на внешний GitHub репозиторий - 
+    git push
+
+ 12. Отредактировать содержание файла “new2.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата):
+    vim new2.txt
+    i Enter
+    ФИО - Веселухина Милена Владимировна
+    Возраст - 20 год
+    Домашние животные - есть
+    Будущая желаемая зарплата - от 1000$
+    Esc :wq
+
+ 13. Отредактировать содержание файла “new2.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
+    vim new2.json
+    i Enter
+    {
+	"first_name": "Milena",
+	"last_name": "Veselukhina",
+	"patronymic": "Vladimirovna",
+	"age": 20,
+	"home_animals": "yes",
+	"desired_salary": "1000$ and higher" 
+    }
+    Esc :wq
+
+ 14. Добавить и закоммитить “new2.txt” одной строчкой - 
+    git commit -ma "new2.txt"
+
+ 15. Добавить и закоммитить “new2.json” одной строчкой - 
+    git add new2.json && git commit -m "new2.json"
+
+ 16. Отправить изменения на внешний репозиторий - 
+    git push
+
+ 17. Отредактировать содержание файла “new2.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+    vim new2.xml
+    i Enter
+    <?xml version="1.0" encoding="UTF-8"?>
+    <INFORMATION>
+       <FIRST_NAME>Milena</FIRST_NAME>
+       <LAST_NAME>Veselukhina</LAST_NAME>
+       <PATRONYMIC>Vladimirovna</PATRONYMIC>
+       <AGE>20</AGE>
+       <HOME_ANIMALS>yes</HOME_ANIMALS>
+       <DECIRED_SALARY>1000$</DECIRED_SALARY>
+     </INFORMATION>
+    Esc :wq 
+
+ 18. Добавить и закоммитить “new2.xml” одной строчкой - 
+    git commit -ma "new2.xml"
+
+ 19. Отправить изменения на внешний репозиторий - 
+    git push
+
+ 20. Отправить предыдущее домашнее задание по GitBush Terminal на внешний репозиторий: 
+    Ссылка: https://github.com/Milenaves10/01_HW_Git.git
+
+ 21. В веб интерфейсе GitHub создать файл new3.txt - 
+    "Add file"
+    "Create new file"
+    "Commit new file"
+
+ 22. Отредактировать в веб интерфейсе содержание файла “new3.txt” - написать информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить):
+    Любимые фильмы - "Иллюзия обмана",
+    Любимые сериалы - "Сверхестественное", "Как избежать наказания за убийство"
+    Любимая еда - Мясо и рыба на гриле
+    Любимое время года - Весна
+    Сторона которую хотели бы посетить - США
+    "Commit changes"
+
+ 23. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+    Ссылка: https://github.com/Milenaves10/01_HW_Git/blob/main/new3.txt
+
+ 24. Синхронизировать внешний и локальный репозитории (слить изменения с внешнего репозитория) - 
+    git fetch
+    git pull
+
+ 25. Отредактировать в веб интерфейсе содержание файла “new.json” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате JSON.
+    {
+	"favorite_movie": "Now_you_see_me",
+	"favorite_series": "How_to_get_away_with_murder",
+	"favorite_food": "grilled_meat",
+	"favorite_season": "spring",
+	"country_you_want_to_visit": "USA" 
+    }
+    "Commit changes"
+
+ 26. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+    Ссылка: https://github.com/Milenaves10/01_HW_Git/blob/main/new.json
+
+ 27. Синхронизировать внешний и локальный репозитории - 
+    git fetch
+    git pull
+
+ 28. Отредактировать в веб интерфейсе содержание файла “new2.xml” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате XML.
+    <?xml version="1.0" encoding="UTF-8"?>
+    <INFORMATION>
+       <favorite_movie>Now_you_see_me</favorite_movie>
+       <favorite_series>How_to_get_away_with_murder</favorite_series>
+       <favorite_food>grilled_meat</favorite_food>
+       <favorite_season>spring</favorite_season>
+       <country_you_want_to_visit>USA</country_you_want_to_visit>
+     </INFORMATION>
+    "Commit changes"
+   
+ 29. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+    Ссылка: https://github.com/Milenaves10/01_HW_Git/commit/4f1b4ac422a6573278fc9d09c40c8945f2e8bd53
+
+ 30. Синхронизировать внешний и локальный репозитории
+    git fetch
+    git pull
