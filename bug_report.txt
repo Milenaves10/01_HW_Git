@@ -1,0 +1,9 @@
+Heading
+Summary:Login: Error message in the login form are displayed in English
+Environment: All browsers
+Actual result: Error message in the login form are displayed in English
+Expected result : Error message in the login form are displayed in chosen language
+Version: 22.1.4.627 beta
+Severity: Major
+Priority: High
+Attachment http://prntscr.com/k905cq
