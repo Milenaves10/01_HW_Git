@@ -1,0 +1,17 @@
+<?xml version ="1.0"?>
+  <skills>
+     <skill1>Postman</skill1>
+     <skill2>Charles</skill2>
+     <skill3>Fiddler</skill3>
+     <skill4>Dev Tools</skill4>
+     <skill5>Android Studio</skill5>
+     <skill6>Git Bash</skill6>
+     <skill7>Github</skill7>
+     <skill8>SQL</skill8>
+     <skill9>Postgres</skill9>
+     <skill10>Redis</skill10>
+     <skill11>Jmeter</skill11>
+     <skill12>Python</skill12>
+     <skill13>Json</skill13>
+     <skill14>Xml</skill14>
+  </skills>
