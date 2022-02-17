@@ -1,4 +1,4 @@
- Group 27
+  Group 27
       01 HW Git
       Milena Veselukhina
       Ссылка на GitHub: https://github.com/Milenaves10/01_HW_Git.git
@@ -9,42 +9,83 @@
    -создан репозиторий в GitHub.
  2. Созданный репозиторий склонирован на локальный компьютер в отдельную папку.
  3. Все шаги сценария выполняются в терминале GitBush, Terminal, в папке под гитом.
+                                                           TXT
+Создать внешний репозиторий c названием TXT 
 
- 4. Создать файл “new.json” - 
-    touch new.json
-
- 5. Добавить файл под гит - 
-    git add new.json
-
- 6. Закоммитить файл - 
-    git commit -m "new.json"
-
- 7. Отправить файл на внешний GitHub репозиторий - 
-    git push
-
- 8. Создать файлы new.json, new.xml, new.txt - 
-    touch new.json new.xml new.txt
-
- 9. Добавить файлы под гит - 
-    git add new.json new.xml new.txt
-
- 10. Закоммитить файлы - 
-    git commit -m "new.json new.txt new.xml"
-
- 11. Отправить файлы на внешний GitHub репозиторий - 
-    git push
-
- 12. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата):
-    vim new2.txt
-    i Enter
+Клонировать репозиторий TXT на локальный компьютер 
+   git clone ссылка
+Внутри локального TXT создать файл "new.txt" 
+   touch new.txt
+Добавить файл под гит
+   git add new.txt
+Закоммитить файл
+   git commit -m "текст"
+Отправить файл на внешний GitHub репозиторий 
+   git push
+Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT 
+   vim new.txt
+   i Enter
     ФИО - Веселухина Милена Владимировна
     Возраст - 20 год
     Домашние животные - есть
     Будущая желаемая зарплата - от 1000$
     Esc :wq
 
- 13. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
-    vim new2.json
+Отправить изменения на внешний репозиторий 
+   git add . === git commit -m "текст" === git push
+Создать файл preferences.txt 
+   touch preferences.txt
+В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT 
+   vim preferences.txt
+    Любимые фильмы - "Иллюзия обмана",
+    Любимые сериалы - "Сверхестественное", "Как избежать наказания за убийство"
+    Любимая еда - Мясо и рыба на гриле
+    Любимое время года - Весна
+    Сторона которую хотели бы посетить - США
+    "Commit changes"
+
+Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT 
+    cat > skills.txt
+Сделать коммит в одну строку 
+    git add . === git commit -m "текст"
+Отправить сразу 2 файла на внешний репозиторий 
+    git push
+На веб интерфейсе создать файл bug_report.txt 
+    link add file === link create new file
+Сделать Commit changes (сохранить) изменения на веб интерфейсе 
+      Ссылка: https://github.com/Milenaves10/01_HW_Git/blob/main/new3.txt  commit new file
+На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT
+     link edit this file
+     Heading
+    Summary:Login: Error message in the login form are displayed in English
+    Environment: All browsers
+    Actual result: Error message in the login form are displayed in English
+    Expected result : Error message in the login form are displayed in chosen language
+    Version: 22.1.4.627 beta
+    Severity: Major
+    Priority: High
+    Attachment http://prntscr.com/k905cq
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе
+    link Commit changes
+Синхронизировать внешний и локальный репозиторий TXT 
+    git pull
+                                                     JSON
+
+Создать внешний репозиторий c названием JSON
+    link new
+Клонировать репозиторий JSON на локальный компьютер
+    git clone ссылка
+Внутри локального JSON создать файл "new.json"
+    touch new.json
+Добавить файл под гит 
+    git add new.json
+Закоммитить файл 
+    git commit -m "текст"
+Отправить файл на внешний GitHub репозиторий 
+    git push
+Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON 
+  vim new.json
     i Enter
     {
 	"first_name": "Milena",
@@ -55,60 +96,12 @@
 	"desired_salary": "1000$ and higher" 
     }
     Esc :wq
-
- 14. Добавить и закоммитить “new.txt” одной строчкой - 
-    git commit -ma "new.txt"
-
- 15. Добавить и закоммитить “new.json” одной строчкой - 
-    git add new.json && git commit -m "new.json"
-
- 16. Отправить изменения на внешний репозиторий - 
-    git push
-
- 17. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
-    vim new.xml
-    i Enter
-    <?xml version="1.0" encoding="UTF-8"?>
-    <INFORMATION>
-       <FIRST_NAME>Milena</FIRST_NAME>
-       <LAST_NAME>Veselukhina</LAST_NAME>
-       <PATRONYMIC>Vladimirovna</PATRONYMIC>
-       <AGE>20</AGE>
-       <HOME_ANIMALS>yes</HOME_ANIMALS>
-       <DECIRED_SALARY>1000$</DECIRED_SALARY>
-     </INFORMATION>
-    Esc :wq 
-
- 18. Добавить и закоммитить “new.xml” одной строчкой - 
-    git commit -ma "new.xml"
-
- 19. Отправить изменения на внешний репозиторий - 
-    git push
-
- 20. Отправить предыдущее домашнее задание по GitBush Terminal на внешний репозиторий: 
-    Ссылка: https://github.com/Milenaves10/01_HW_Git.git
-
- 21. В веб интерфейсе GitHub создать файл new3.txt - 
-    "Add file"
-    "Create new file"
-    "Commit new file"
-
- 22. Отредактировать в веб интерфейсе содержание файла “preferences.txt” - написать информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить):
-    Любимые фильмы - "Иллюзия обмана",
-    Любимые сериалы - "Сверхестественное", "Как избежать наказания за убийство"
-    Любимая еда - Мясо и рыба на гриле
-    Любимое время года - Весна
-    Сторона которую хотели бы посетить - США
-    "Commit changes"
-
- 23. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
-    Ссылка: https://github.com/Milenaves10/01_HW_Git/blob/main/new3.txt
-
- 24. Синхронизировать внешний и локальный репозитории (слить изменения с внешнего репозитория) - 
-    git fetch
-    git pull
-
- 25. Отредактировать в веб интерфейсе содержание файла “preferences.json” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате JSON.
+Отправить изменения на внешний репозиторий 
+   git add . === git commit -m "текст" === git push
+Создать файл preferences.json 
+   touch preferences.json
+В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хотели бы посетить) в формате JSON 
+   vim preferences.json 
     {
 	"favorite_movie": "Now_you_see_me",
 	"favorite_series": "How_to_get_away_with_murder",
@@ -117,70 +110,9 @@
 	"country_you_want_to_visit": "USA" 
     }
     "Commit changes"
-
- 26. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
-    Ссылка: https://github.com/Milenaves10/01_HW_Git/blob/main/new.json
-
- 27. Синхронизировать внешний и локальный репозитории - 
-    git fetch
-    git pull
-
- 28. Отредактировать в веб интерфейсе содержание файла “preferences.xml” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате XML.
-    <?xml version="1.0" encoding="UTF-8"?>
-    <INFORMATION>
-       <favorite_movie>Now_you_see_me</favorite_movie>
-       <favorite_series>How_to_get_away_with_murder</favorite_series>
-       <favorite_food>grilled_meat</favorite_food>
-       <favorite_season>spring</favorite_season>
-       <country_you_want_to_visit>USA</country_you_want_to_visit>
-     </INFORMATION>
-    "Commit changes"
-
- 29. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
- Скиллы, которые будут изучены:
-    1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.
-    2. Что такое клиент-серверная архитектура.
-    3. HTTP Методы запросов на сервер.
-    4. Коды ответов HTTP сервера.
-    5. Структуры HTTP запросов и ответов.
-    6. Что такое JSON, XML. Их структура.
-    7. Тестирование API через Postman (JS, автотесты API).
-    8. Снятие и чтение логов c внешнего сервера.
-    9. Снифинг http web трафика через Charles и Fiddler.
-    10. Dev Tools веб браузеров (Google Chrome, FireFox).
-    11. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов) 
-    12. Мобильное тестирование.
-    13. Особенность iOS, Android, гайдлайны.
-    14. Сборка iOS приложений на XCode.
- 30. Сделать коммит в одну строку.
-    git add skills.txt && git commit -ma "skills.txt"
-
- 31. На веб интерфейсе создать файл bug_report.txt.
-   add file bug_report.txt
-
- 32. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
-    Heading
-    Summary:Login: Error message in the login form are displayed in English
-    Environment: All browsers
-    Actual result: Error message in the login form are displayed in English
-    Expected result : Error message in the login form are displayed in chosen language
-    Version: 22.1.4.627 beta
-    Severity: Major
-    Priority: High
-    Attachment http://prntscr.com/k905cq
- 33. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
-   https://github.com/Milenaves10/01_HW_Git/blob/main/HW_TXT/bug_report.txt  
-
- 34. Синхронизировать внешний и локальный репозиторий TXT  
-    git fetch
-    git pull
-
- 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
-    Ссылка: https://github.com/Milenaves10/01_HW_Git/blob/main/HW_TXT/bug_report.txt
-
- 36. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON.
- Скиллы, которые будут изучены:
- {
+Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON 
+    vim skills.json 
+     {
      "skill1":"Postman",
      "skill2":"Charles",
      "skill3":"Fiddler",
@@ -196,16 +128,15 @@
      "skill13":"Json",
      "skill14":"Xml"
 }
- 37. Сделать коммит в одну строку.
-    git add skills.json && git commit -m "skills.json"
- 38. Синхронизировать внешний и локальный репозиторий JSON  
-    git fetch
-    git pull
+Отправить сразу 2 файла на внешний репозиторий 
+     git add . === git commit -m "текст" === git push
+На веб интерфейсе создать файл bug_report.json 
+    link add file === link create new file
+Сделать Commit changes (сохранить) изменения на веб интерфейсе
+    link commit new file
 
- 38. На веб интерфейсе создать файл bug_report.json.
-   add file bug_report.json
-
- 39. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON 
+    link edit this file
     {   
       "Summary":"Login:Error_message_in_the_login_form_are_displayed_in_English",
       "Environment": "All_browsers",
@@ -216,18 +147,55 @@
       "Priority":"High",
       "Attachment": "http://prntscr.com/k905cq"
 }
- 40. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
-   https:https://github.com/Milenaves10/01_HW_Git/blob/main/HW_JSON/bug_report.json  
 
- 41. Синхронизировать внешний и локальный репозиторий JSON
-    git fetch
+Сделать Commit changes (сохранить) изменения на веб интерфейсе
+    link Commit changes
+Синхронизировать внешний и локальный репозиторий JSON 
     git pull
-
- 42. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
-    Ссылка: https://github.com/Milenaves10/01_HW_Git/blob/main/HW_JSON/bug_report.json
-
- 43. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML.
- Скиллы, которые будут изучены:
+                                                               XML
+Cоздать внешний репозиторий c названием XML. 
+    link new
+Клонировать репозиторий XML на локальный компьютер.
+    git clone ссылка
+Внутри локального XML создать файл “new.xml”. 
+    touch new.xml
+Добавить файл под гит. 
+    git add new.xml
+Закоммитить файл. 
+    git commit -m "текст"
+Отправить файл на внешний GitHub репозиторий. 
+    git push
+Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. 
+   nano new.xml
+   vim new.xml
+    i Enter
+    <?xml version="1.0" encoding="UTF-8"?>
+    <INFORMATION>
+       <FIRST_NAME>Milena</FIRST_NAME>
+       <LAST_NAME>Veselukhina</LAST_NAME>
+       <PATRONYMIC>Vladimirovna</PATRONYMIC>
+       <AGE>20</AGE>
+       <HOME_ANIMALS>yes</HOME_ANIMALS>
+       <DECIRED_SALARY>1000$</DECIRED_SALARY>
+     </INFORMATION>
+    Esc :wq 
+Отправить изменения на внешний репозиторий. 
+     git add . === git commit -m "текст" === git push
+Создать файл preferences.xml 
+    touch preferences.xml
+В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хотели бы посетить) в формате XML.
+    nano preferences.xml
+<?xml version="1.0" encoding="UTF-8"?>
+    <INFORMATION>
+       <favorite_movie>Now_you_see_me</favorite_movie>
+       <favorite_series>How_to_get_away_with_murder</favorite_series>
+       <favorite_food>grilled_meat</favorite_food>
+       <favorite_season>spring</favorite_season>
+       <country_you_want_to_visit>USA</country_you_want_to_visit>
+     </INFORMATION>
+    "Commit changes"
+Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML 
+     nano skills.xml
 <?xml version ="1.0"?>
   <skills>
      <skill1>Postman</skill1>
@@ -245,14 +213,17 @@
      <skill13>Json</skill13>
      <skill14>Xml</skill14>
   </skills>
- 44. Сделать коммит в одну строку.
-    git add skills.xml && git commit -m "skills.xml"
-
- 45. На веб интерфейсе создать файл bug_report.xml.
-   add file bug_report.json
-
- 46. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
-    <?xml version ="1.0"?>
+Сделать коммит в одну строку. 
+    git add . === git commit -m "текст"
+Отправить сразу 2 файла на внешний репозиторий. 
+    git push
+На веб интерфейсе создать файл bug_report.xml. 
+    link add file === link create new file
+Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+    link Commit new file
+На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. 
+    link edit this file
+   <?xml version ="1.0"?>
    <bug_report>
       <Summary>Login:Error message in the login form are displayed in English</Summary>
       <Environment>All browsers</Environment>
@@ -263,10 +234,7 @@
       <Priority>High</Priority>
       <Attachment>http://prntscr.com/k905cq</Attachment>
    </bug_report>
-
- 40. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
-   https:https://github.com/Milenaves10/01_HW_Git/blob/main/HW_XML/bug_report.xml
-
- 41. Синхронизировать внешний и локальный репозиторий XML
-    git fetch
-    git pull
+Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+     link Commit changes
+Синхронизировать внешний и локальный репозиторий XML 
+     git pull
